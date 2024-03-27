@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="my-name-logo"><span>Jhansi</span>Lakshmi</a>
+            <ul>
+                <li><a href="#"><i class='bx bxs-home-heart'></i>Home</a></li>
+                <li><a href="#about"><i class='bx bxs-user-rectangle'></i>About</a></li>
+                <li><a href="#experience"><i class='bx bxs-bookmark-star'></i>Experience</a></li>
+            </ul>
+            <a href="#contactSection" class="contact-me"><i class='bx bxs-chat'></i>Contant Me</a>
+        </nav>
+        <div class="home">
+            <div class="home-content">
+                <h3>Hi!</h3>
+                <h1>I'm <span>JhansiLakshmi<br></span>a Frontend Developer</h1>
+                <p>I am currently a student at <span class="paragraph">NxtWave</span>,
+                    where I am pursuing a course in <span class="paragraph">Full Stack Development</span>
+                    with 4.0 technologies.</p>
+            </div>
+            <div class="my-img">
+                <img src="https://res.cloudinary.com/deg7wwo4u/image/upload/v1711377455/jhansi_i5axv4.jpg" alt="" />
+            </div>
+        </div>
+    </header>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-section-1">
+                    <img src="https://res.cloudinary.com/deg7wwo4u/image/upload/v1711377455/jhansi_i5axv4.jpg" alt="" />
+                </div>
+                <div class="about-section-2">
+                    <h2 class="h2-heading">About <span>Me</span></h2>
+                    <h3 class="h3-heading">FrontEnd Developer</h3>
+                    <p class="main-paragraph">I am currently a student at <span class="paragraph">NxtWave</span>, where I am pursuing a course in <span class="paragraph">Full Stack Development</span> with 4.0 technologies and I am a fresher, recently I completed my <span class="paragraph">B.Tech</span> graduation with a specialization in <span class="paragraph">Electrical and Electronics Engineering (EEE)</span> from Sree Venkateswara College of Engineering and I'm also an <span class="paragraph">artist</span>, specializing in creating <span class="paragraph">face drawings</span>, <span class="paragraph">paintings</span>, <span class="paragraph">pencil sketches</span>, and <span class="paragraph">mandala artworks</span>.</p>
+
+                    <div class="about-titles">
+                        <p class="about-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="about-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="about-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Bootstrap</span></li>
+                            <li><span>Python</span></li>
+                        </ul>
+                    </div>
+                    <div class="about-contents" id="education">
+                        <ul>
+                            <li><span>2023-2025</span><br>Full Stack Development Course</li>
+                            <li><span>2019-2023</span><br>B.Tech</li>
+                            <li><span>2017-2019</span><br>Intermediate</li>
+                            <li><span>2012-2017</span><br>10th Class</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience">
+        <h1 class="title-experience">My <span>Experiences</span></h1>
+        <div class="experience-card">
+            <div class="ex-sub-card">
+                <img src="https://res.cloudinary.com/deg7wwo4u/image/upload/v1711512882/ta_sskpic.png" class="ex-sub-card-image" />
+                <h2 class="ex-sub-card-title mt-3">Teaching Assistant</h2>
+                <p class="ex-sub-card-description">I am currently a student at Nxtwave, where I am pursuing a course in Full Stack Development with 4.0 technologies and Working as a teaching assistant at NXTWave has been a rewarding experience. Not only do I get to help clarify doubts for CCBP students, but I also find that it serves as a valuable opportunity for my own revision.</p>
+                <div id="workstauts">
+                    <h3 class="check-out">Check out my work as a Teaching Assistant.</h3>
+                    <button class="button" type="button" onclick="location.href='https://portal.ccbp.in/teaching-assistant-profile?uid=jhansi-lakshmi-1' ">Click Here</button>
+                </div>
+            </div>
+            <div class="ex-sub-card">
+                <img src="https://res.cloudinary.com/deg7wwo4u/image/upload/v1711513100/os_eibdph.png" class="ex-sub-card-image" />
+                <h2 class="ex-sub-card-title mt-3">Webdevelopment Internship</h2>
+                <p class="ex-sub-card-description">Interning at Oasis Infobyte in web development and designing has been incredibly beneficial for me. As a fresher, this internship has provided me with invaluable experience. Through this opportunity, I have gained significant knowledge and skills, particularly in HTML and CSS languages.</p>
+                <div id="workstauts">
+                    <h3 class="check-out">Check out my work as an Intern.</h3>
+                    <button class="button" type="button" onclick="location.href='https://jhansiragala.ccbp.tech/' ">Click Here</button>
+                </div>
+            </div>
+            <a href="#" id="view-all">View All<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+    </div>
+
+    <div class="contact-form pl-5" id="contactSection">
+        <div class="d-flex flex-row">
+            <div>
+                <h2 id="contact-me">Contact<span> Me</span></h2>
+                <p class="para ml-5"><i class='bx bxl-telegram contact-icon'></i>contact123@gmail.com</p>
+                <p class="para ml-5"><i class='bx bxs-phone contact-icon'></i>0123456789</p>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+                <button class="Sub-Btn ml-5">Download CV</button>
+            </div>
+            <div>
+                <form>
+                    <div class="input-box">
+                        <label class="label-Ele">Name</label>
+                        <input type="text" placeholder="Enter Your Full Name" />
+                        <label class="label-Ele">Email</label>
+                        <input type="email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="input-box">
+                        <label class="label-Ele">Mobile Number</label>
+                        <input type="number" placeholder="Enter Your Mobile Number" />
+                        <label class="label-Ele">Subject</label>
+                        <input type="text" placeholder="Enter Your Subject">
+                    </div>
+                    <div class="input-box">
+                        <label class="label-Ele">Message</label>
+                        <textarea class="textareaEl" name="" id="" cols="30" rows="8" placeholder="Enter Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="Sub-Btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="list">
+            <li><a href="#">FAQ<i class='bx bx-question-mark'></i></a></li>
+            <li><a href="#">Home<i class='bx bxs-home-heart'></i></a></li>
+            <li><a href="#">About<i class='bx bxs-user-rectangle'></i></a></li>
+            <li><a href="#">Experience<i class='bx bxs-bookmark-star'></i></a></li>
+            <li><a href="#">Contact Me<i class='bx bxs-chat'></i></a></li>
+        </ul>
+        <p class="copyright">Copyright<i class='bx bx-copyright'></i>2024;Designed by <span>JhansiLakshmi; </span>All rights reserved.</p>
+    </footer>
+
+    <script>
+        var aboutlinks = document.getElementsByClassName("about-links");
+        var aboutcontents = document.getElementsByClassName("about-contents");
+
+        function opentab(tabname) {
+            for (aboutlink of aboutlinks) {
+                aboutlink.classList.remove("active-link");
+            }
+            for (aboutcontent of aboutcontents) {
+                aboutcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
