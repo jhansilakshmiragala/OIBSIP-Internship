@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="bg-container text-center">
+        <h1 class="heading">Temperature Converter</h1>
+        <p class="mainPara">"Enter the degree value and temperature type to convert the temperature to your selected type."</p>
+
+        <div class="mb-3">
+            <label for="degreeInput" class="labelEle">Degree Value *</label><br>
+            <input id="degreeInput" type="number" class="w-50 mb-2 input-degree" />
+            <p id="degreeErrMsg" class="error-message"></p>
+        </div>
+        <div class="mb-3">
+            <label for="temperatureInput" class="labelEle">Temperature Type *</label><br>
+            <select id="temperatureInput" class="selectEl mb-2 p-1 w-50">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+            <p id="tempErrMsg" class="error-message"></p>
+        </div>
+        <button id="convertBtn" class="buttonEle mt-3">Convert</button>
+        <div class="d-flex flex-row justify-content-center">
+            <p id="tempInUserWish1"></p>
+            <p id="tempInUserWish2"></p>
+        </div>
+        <div>
+            <p id="errorMsg"></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
