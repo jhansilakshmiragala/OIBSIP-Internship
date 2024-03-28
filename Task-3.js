@@ -43,7 +43,7 @@ function KelvinToCelsiusAndFahrenheit() {
         let fTemp = (kTemp - 273.15) * (9 / 5) + 32;
 
         tempInUserWishEl1.textContent = roundNumber(cTemp) + "*C";
-        tempInUserWishEl2.textContent = roundNumber(fTemp) + "*K";
+        tempInUserWishEl2.textContent = roundNumber(fTemp) + "*F";
         tempInUserWishEl1.classList.add("tempResult");
         tempInUserWishEl2.classList.add("tempResult");
     }
